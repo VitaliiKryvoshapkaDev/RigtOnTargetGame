@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KpS-Jy-KLk">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="KpS-Jy-KLk">
                                 <rect key="frame" x="62" y="192" width="772" height="31"/>
                                 <imageReference key="minimumValueImage" image="01.square.fill" catalog="system" symbolScale="large" renderingMode="hierarchical">
                                     <hierarchicalColors>
@@ -50,6 +50,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="22"/>
                                     <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkNumberButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="nM5-Sq-agJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -64,6 +67,10 @@
                             <constraint firstItem="NdG-A8-Jee" firstAttribute="top" secondItem="KpS-Jy-KLk" secondAttribute="bottom" constant="30" id="xMe-zF-9H5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="exl-vz-naZ" id="bSo-kv-Utp"/>
+                        <outlet property="slider" destination="KpS-Jy-KLk" id="0BG-p6-hIC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
