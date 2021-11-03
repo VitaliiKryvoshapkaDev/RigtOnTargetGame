@@ -90,26 +90,23 @@ class ViewController: UIViewController {
         self.label.text = String(self.randomNumber)
     }
     
-    //Lazy property to secondVC (Should be viewWillAppear & viewDidAppear
-    lazy var secondViewController: SecondViewController = getSecondViewController()
-    
-    //Private mathod, who load view
-    private func getSecondViewController() -> SecondViewController{
-        //Load storyboard
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //Load VC $ Scene from storyboard
-        let viewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController")
-        return viewController as! SecondViewController
-    }
-    
-    
-    
-    //Present Method
-    @IBAction func showNextScreen(){
-       
-        //Show scene on creen
-        self.present(secondViewController, animated: true, completion: nil)
-    }
+//    //Lazy property to secondVC (Should be viewWillAppear & viewDidAppear
+//    lazy var secondViewController: SecondViewController = getSecondViewController()
+//
+//    //Private mathod, who load view
+//    private func getSecondViewController() -> SecondViewController{
+//        //Load storyboard
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        //Load VC $ Scene from storyboard
+//        let viewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController")
+//        return viewController as! SecondViewController
+//    }
+//    //Present Method
+//    @IBAction func showNextScreen(){
+//
+//        //Show scene on creen
+//        self.present(secondViewController, animated: true, completion: nil)
+//    }
 }
 
 

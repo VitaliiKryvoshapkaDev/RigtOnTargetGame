@@ -39,7 +39,7 @@ class SecondViewController: UIViewController {
         print("viewDidDisappear SecondViewController")
     }
     
-    @IBAction func hideCurrentCreen() {
-        self.dismiss(animated: true, completion: nil)
-    }
+//    @IBAction func hideCurrentCreen() {
+//        self.dismiss(animated: true, completion: nil)
+//    }
 }
