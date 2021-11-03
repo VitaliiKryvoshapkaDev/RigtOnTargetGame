@@ -19,6 +19,18 @@ class ViewController: UIViewController {
     //Points sum in round
     var points: Int = 0
     
+    override func loadView() {
+        super.loadView()
+        print("LoadView")
+        
+//        //Create version Lable
+//        let versionLable = UILabel(frame: CGRect(x: 20, y: 10, width: 200, height: 20))
+//        //Change Lable text
+//        versionLable.text = "Viersion 1.1"
+//        versionLable.textColor = #colorLiteral(red: 0.118, green: 0.439, blue: 0.412, alpha: 1.000)
+//        self.view.addSubview(versionLable)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
@@ -27,6 +39,26 @@ class ViewController: UIViewController {
         self.randomNumber = Int.random(in: 1...50)
         //Set random number in label
         self.label.text = String(self.randomNumber)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("viewDidDisappear")
     }
     
     //Game logic
@@ -56,6 +88,27 @@ class ViewController: UIViewController {
         self.randomNumber = Int.random(in: 1...50)
         //Hand over random number in lable
         self.label.text = String(self.randomNumber)
+    }
+    
+    //Lazy property to secondVC (Should be viewWillAppear & viewDidAppear
+    lazy var secondViewController: SecondViewController = getSecondViewController()
+    
+    //Private mathod, who load view
+    private func getSecondViewController() -> SecondViewController{
+        //Load storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //Load VC $ Scene from storyboard
+        let viewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController")
+        return viewController as! SecondViewController
+    }
+    
+    
+    
+    //Present Method
+    @IBAction func showNextScreen(){
+       
+        //Show scene on creen
+        self.present(secondViewController, animated: true, completion: nil)
     }
 }
 
