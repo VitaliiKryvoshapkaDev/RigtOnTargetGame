@@ -51,7 +51,7 @@
                                     <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="checkNumberButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="nM5-Sq-agJ"/>
+                                    <action selector="checkNumber" destination="BYZ-38-t0r" eventType="touchUpInside" id="CuC-0f-kWQ"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -14,6 +14,8 @@
 		B6945A81272B395900E25BF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6945A80272B395900E25BF8 /* Assets.xcassets */; };
 		B6945A84272B395900E25BF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6945A82272B395900E25BF8 /* LaunchScreen.storyboard */; };
 		B6945AB12733446D00E25BF8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6945AB02733446D00E25BF8 /* Game.swift */; };
+		B6945AB32734872400E25BF8 /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6945AB22734872400E25BF8 /* GameRound.swift */; };
+		B6945AB52734873300E25BF8 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6945AB42734873300E25BF8 /* Generator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B6945A83272B395900E25BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6945A85272B395900E25BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6945AB02733446D00E25BF8 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		B6945AB22734872400E25BF8 /* GameRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		B6945AB42734873300E25BF8 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				B6945AB02733446D00E25BF8 /* Game.swift */,
+				B6945AB22734872400E25BF8 /* GameRound.swift */,
+				B6945AB42734873300E25BF8 /* Generator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				B6945A7C272B395700E25BF8 /* ViewController.swift in Sources */,
 				B6945A78272B395700E25BF8 /* AppDelegate.swift in Sources */,
 				B6945A7A272B395700E25BF8 /* SceneDelegate.swift in Sources */,
+				B6945AB52734873300E25BF8 /* Generator.swift in Sources */,
+				B6945AB32734872400E25BF8 /* GameRound.swift in Sources */,
 				B6945AB12733446D00E25BF8 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
