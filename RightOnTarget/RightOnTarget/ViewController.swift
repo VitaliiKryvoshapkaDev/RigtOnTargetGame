@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     
     //MARK: - Life cycle -
     
+    override func loadView() {
+        super.loadView()
+        print("Load View")
+    }
     
       // MARK: - Жизненный цикл
       override func viewDidLoad() {
